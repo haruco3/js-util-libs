@@ -62,7 +62,6 @@
         this._elements.dataRows.push(row);
         this._elements.table.appendChild(this._elements.spacer);
         this._lastRow = row;
-        row.scrollIntoView();
         spacerCheck.call(this);
     }
     p.removeRow = function(iRowIndex) {
@@ -80,6 +79,10 @@
         this._lastRow = null;
         this._lastSortIndex = null;
         spacerCheck.call(this);
+    }
+    p.scrollToBottom = function() {
+        if (this._lastRow)
+            this._lastRow.scrollIntoView();
     }
     function resetSort() {
         this._lastSortIndex = null;

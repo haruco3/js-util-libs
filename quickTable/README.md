@@ -19,6 +19,9 @@ Removes a row at the given position relative to the unsorted table.
 **clear**()
 Empties out the table but keeps the column headings.
 
+**scrollToBottom**()
+If the table content is longer than its container, scrolls to the bottom of the content.
+
 ### Properties
 **domElement**: HTMLElement
 The <div> element containing the table. Created internally on construction.
