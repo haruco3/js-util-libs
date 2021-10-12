@@ -24,7 +24,7 @@ If the table content is longer than its container, scrolls to the bottom of the 
 
 ### Properties
 **domElement**: HTMLElement
-The <div> element containing the table. Created internally on construction.
+The \<div\> element containing the table. Created internally on construction.
 
 **sortEnabled**: boolean, default true
 Determines if the table can be sorted by clicking on the column headings.
